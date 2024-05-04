@@ -46,6 +46,7 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 - изменить тип данных 
 - наложить ограничения
 - и многое другое...  
+
 В таком случае проект сильно разрастается повторяющимися участками кода...
 
 
