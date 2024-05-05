@@ -6,7 +6,8 @@ namespace Database;
 /// <summary>
 /// Класс изменеия сущности для базы данных.
 /// </summary>
-/// <typeparam name="TEntity">Возможно использование данного класса только базовой сущностью (BaseEntity) и её наследниками.</typeparam>
+/// <typeparam name="TEntity">Возможно использование данного класса только базовой сущностью (BaseEntity) и её наследниками,
+/// определенными в, рядом лежащем, проекте Entities.</typeparam>
 internal static class ConfigurationService<TEntity>
     where TEntity : BaseEntity
 {
@@ -71,6 +72,7 @@ internal static class ConfigurationService<TEntity>
     private static async Task ChangeColumnAsync(ModelBuilder modelBuilder)
     {
         await Task.Run(() => ChangeColumn(modelBuilder));
+        await Task.CompletedTask;
     }
 
     /// <summary>

@@ -18,8 +18,8 @@ public class DataContext(DbContextOptions<DataContext> options) : DbContext(opti
     /// Настройка модели из типа сущности.
     /// </summary>
     /// <param name="modelBuilder">Конструктор модели FluentAPI.</param>
-    protected override async void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        await ConfigurationService<User>.ChangeEntityAsync(modelBuilder);
+        ConfigurationService<User>.ChangeEntityAsync(modelBuilder).GetAwaiter().GetResult();
     }
 }
