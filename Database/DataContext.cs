@@ -1,4 +1,5 @@
 ﻿using Entities;
+using FluentAPI;
 using Microsoft.EntityFrameworkCore;
 
 namespace Database;
@@ -17,9 +18,9 @@ public class DataContext(DbContextOptions<DataContext> options) : DbContext(opti
     /// <summary>
     /// Настройка модели из типа сущности.
     /// </summary>
-    /// <param name="modelBuilder">Конструктор модели FluentAPI.</param>
+    /// <param name="modelBuilder">Конструктор модели нотации FluentAPI.</param>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        ConfigurationService<User>.ChangeEntityAsync(modelBuilder).GetAwaiter().GetResult();
+        EntityBuilder<User>.ChangeEntity(modelBuilder);
     }
 }

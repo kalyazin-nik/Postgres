@@ -1,4 +1,4 @@
-﻿namespace Database;
+﻿namespace FluentAPI.Models;
 
 /// <summary>
 /// Информация о таблице в базе данных.
@@ -8,7 +8,7 @@
 /// Если аргумент схемы null, то будет использоваться по умолчанию - public.</param>
 /// <param name="constraints">Ограничения накладываемые на таблицу. Если аргумент ограничений null, то ограничения не будут наложены. 
 /// Ключом указывается имя ограничения, значением - описание в формате SQL запроса.</param>
-internal readonly struct TableInfo(string name, string schema = null!, Dictionary<string, string>? constraints = null!)
+internal readonly struct Table(string name, string? schema = null, Constraint[]? constraints = null)
 {
     /// <summary>
     /// Имя таблицы используемое в базе данных.
@@ -24,5 +24,5 @@ internal readonly struct TableInfo(string name, string schema = null!, Dictionar
     /// Ограничения накладываемые на таблицу. Если аргумент ограничений null, то ограничения не будут наложены.
     /// Ключом указывается имя ограничения, значением - описание в формате SQL запроса.
     /// </summary>
-    internal readonly Dictionary<string, string>? Constrants = constraints;
+    internal readonly Constraint[]? Constraints = constraints;
 }

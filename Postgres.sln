@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{C6B5B682-E29E-40CC-9862-0928DB3BDCF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "Database\Database.csproj", "{C6B5B682-E29E-40CC-9862-0928DB3BDCF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{0D6CA988-6E7C-458A-BE20-26810D8832BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{0D6CA988-6E7C-458A-BE20-26810D8832BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAPI", "FluentAPI\FluentAPI.csproj", "{BD3F782A-ADCC-49C1-BB8E-C04C082EACA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0D6CA988-6E7C-458A-BE20-26810D8832BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D6CA988-6E7C-458A-BE20-26810D8832BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D6CA988-6E7C-458A-BE20-26810D8832BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3F782A-ADCC-49C1-BB8E-C04C082EACA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3F782A-ADCC-49C1-BB8E-C04C082EACA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3F782A-ADCC-49C1-BB8E-C04C082EACA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3F782A-ADCC-49C1-BB8E-C04C082EACA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
